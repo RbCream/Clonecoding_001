@@ -1,0 +1,181 @@
+/* 전체 페이지 대상 */
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body {
+  text-transform: capitalize;
+  background-color: #f0f2f5;
+}
+
+.container {
+  height: 672px;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 로고 , 설명문구  */
+.logo_img {
+  width: 350px;
+  margin-top: 90px;
+}
+.logo_svg a {
+  width: 450px;
+  display: block;
+  margin-left: 2.1rem;
+  font-size: 23px;
+  margin-top: -1.5rem;
+}
+
+/* ID,PW 폼삽임  */
+
+form {
+  position: relative;
+  margin-top: 100px;
+  min-width: 396px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form input {
+  width: 100%;
+  display: block;
+  border: 1px solid #dddfe2;
+  padding: 20px;
+  outline: none;
+  margin-bottom: 15px;
+  border-radius: 7px;
+}
+
+.login_btn {
+  width: 100%;
+  text-decoration: none;
+  background-color: #1877f2;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.login_forget_pw {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: #1877f2;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddfe2;
+}
+.login_new_acc {
+  text-decoration: none;
+  background-color: #42b72a;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.new_page {
+  position: absolute;
+  top: 400px;
+  font-size: 14px;
+  color: black;
+}
+
+.new_page a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.new_page a:hover {
+  text-decoration: underline;
+}
+/* Footer  */
+footer {
+  background-color: white;
+  width: 100%;
+  height: 230px;
+}
+.footer {
+  max-width: 980px;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ul li {
+  display: inline;
+  margin-right: 8px;
+}
+ul li a {
+  text-decoration: none;
+  color: #8a8d91;
+  font-size: 12px;
+  white-space: nowrap;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.foot_lang ul {
+  border-bottom: 1px solid #dddfe2;
+  padding-bottom: 10px;
+}
+
+.foot_name {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #8a8d91;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  body .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  body .container {
+    height: 42rem;
+    max-width: 400px;
+  }
+  form {
+    min-width: 300px;
+    margin-top: 280px;
+  }
+  .logo_svg p {
+    width: 300px;
+    margin-bottom: -500px;
+  }
+  .logo_img {
+    width: 300px;
+    margin-top: -20px;
+  }
+}
